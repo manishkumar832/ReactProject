@@ -1,0 +1,72 @@
+.login {
+  display: flex;
+
+  justify-content: center;
+  padding: 40px 20px;
+  /* background-color: #f0f2f5; */
+}
+
+.loginForm {
+  background-color: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.loginForm h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.loginForm input,
+.loginForm select {
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.loginForm input:focus,
+.loginForm select:focus {
+  border-color: #4a90e2;
+}
+
+.loginForm button {
+  background-color:  #080e21;
+  color:#d4af7f;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.loginForm button:hover {
+  color:#f1c27d;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+  .loginForm {
+    padding: 25px 20px;
+    gap: 12px;
+  }
+
+  .loginForm input,
+  .loginForm select {
+    font-size: 15px;
+  }
+
+  .loginForm button {
+    font-size: 15px;
+  }
+}

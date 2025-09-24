@@ -1,0 +1,131 @@
+/* Container for all bookings */
+.bookings-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 50px;
+  padding: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.booking h2 {
+  color: gray;
+  text-align: center;
+  padding-top: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Card styling */
+.booking-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+}
+
+.booking-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Image styling */
+.booking-card img {
+  width: 100%;
+  height: 180px; /* Fixed height */
+  object-fit: cover; /* Ensures image fits nicely */
+}
+
+/* Card content */
+.booking-card-content {
+  padding: 15px;
+}
+
+.booking-card-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.booking-card-content p {
+  font-size: 0.9rem;
+  margin: 4px 0;
+  color: #555;
+}
+
+.booking-card-content strong {
+  color: #222;
+}
+
+/* -------- Responsive Design -------- */
+
+/* Tablets (portrait & small landscape) */
+@media (max-width: 1024px) {
+  .bookings-container {
+    gap: 30px;
+    padding: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+
+  .booking-card img {
+    height: 160px;
+  }
+
+  .booking-card-content h3 {
+    font-size: 1rem;
+  }
+
+  .booking-card-content p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .bookings-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .booking-card img {
+    height: 150px;
+  }
+
+  .booking-card-content {
+    padding: 10px;
+  }
+
+  .booking-card-content h3 {
+    font-size: 0.95rem;
+  }
+
+  .booking-card-content p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .bookings-container {
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .booking-card img {
+    height: 140px;
+  }
+
+  .booking-card-content h3 {
+    font-size: 0.9rem;
+  }
+
+  .booking-card-content p {
+    font-size: 0.78rem;
+  }
+}
+
+
+

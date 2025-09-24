@@ -1,0 +1,153 @@
+.mainpage {
+  font-family: "Playfair Display", serif;
+  color: white;
+  background-color: #0b0b0b;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: gold;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+}
+
+.explore-btn {
+  padding: 12px 30px;
+  background: gold;
+  color: black;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.explore-btn:hover {
+  background: white;
+  color: black;
+}
+
+/* CATEGORIES */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 10px;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #111;
+  transition: transform 0.3s ease;
+}
+
+.category-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.category-card h3 {
+  padding: 15px;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+}
+
+/* ABOUT */
+.about {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  color: gold;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  padding: 60px 20px;
+  background: #111;
+  text-align: center;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  background: #1b1b1b;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+/* FOOTER */
+.footer {
+  background: #080e21;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-icons a {
+  color: gold;
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .categories {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
+
+

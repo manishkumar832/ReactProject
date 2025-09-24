@@ -1,0 +1,136 @@
+.events-container {
+  padding: 2rem;
+  background-color: #f7f7f7;
+}
+.events-container h2{
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: grey;
+   text-align: center;
+   padding-bottom: 20px;
+}
+
+.events-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.event-item {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  /* Add these 👇 */
+  max-width: 300px;       /* or 350px or whatever fits your layout */
+  margin: 1rem auto;      /* center the card */
+}
+
+
+.event-item:hover {
+  transform: scale(1.03);
+}
+
+.event-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+
+.event-details {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.event-details img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin: 1rem 0;
+  border-radius: 10px;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.book-btn {
+  margin-top: 1rem;
+  padding: 0.8rem 1.4rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.book-btn:hover {
+  background-color: #218838;
+}
+/* Hide all but the print section when printing */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #print-section, #print-section * {
+    visibility: visible;
+  }
+
+  #print-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+.confirmed-card {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  font-size: 0.95rem;
+}
+
+.confirmed-card h5 {
+  font-size: 1.25rem;
+  color: #007bff;
+}
+
+.confirmed-card p {
+  margin-bottom: 6px;
+}
+
+.confirmed-image {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.confirmed-card .btn-outline-primary {
+  font-size: 0.9rem;
+  padding: 6px 14px;
+}
+
+
+
