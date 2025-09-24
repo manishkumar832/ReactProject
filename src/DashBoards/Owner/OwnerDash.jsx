@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { collection, getDocs, query, orderBy } from 'firebase/firestore';
 import { db } from '../../Firebase/FirebaseConfig'; // adjust path if needed
-import "./owner.css"
+import "./Owner.css"
 import { getAuth } from 'firebase/auth';
 import { Carousel } from 'react-bootstrap';
 import {Spinner} from 'react-bootstrap'
