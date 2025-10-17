@@ -1,4 +1,4 @@
-/* Navbar container */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -156,4 +156,53 @@
   font-family: 'Segoe UI', sans-serif;
   box-shadow: 0 2px 10px rgba(0,0,0,0.5);
   z-index: 1001;
+}
+.user-info-box {
+  position: relative;
+  margin-top: 16px; /* increased space below navbar */
+  background-color: #101316;
+  border: 1px solid #cfa14c;
+  padding: 16px;
+  border-radius: 8px;
+  color: #cfa14c;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  z-index: 999;
+  width: 260px;
+  margin-left: auto;
+  margin-right: 40px;
+  transition: all 0.3s ease;
+}
+
+/* Tablet view */
+@media (max-width: 1024px) {
+  .user-info-box {
+    width: 220px;
+    margin-right: 20px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .user-info-box {
+    position: relative;
+    width: 90%;
+    max-width: 320px;
+    margin: 20px auto 0 auto; /* centered and spaced */
+    text-align: center;
+    padding: 14px;
+    background-color: #0b0d0f; /* darker for contrast */
+    border: 1px solid #cfa14c;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .user-info-box {
+    width: 95%;
+    font-size: 0.9rem;
+    padding: 12px;
+    margin-top: 25px; /* extra space to avoid overlap */
+  }
 }
